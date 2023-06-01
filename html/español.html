@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mi Sitio Web</title>
+</head>
+<body>
+    <style>
+        /* Transición de opacidad al pasar el mouse sobre la imagen */
+.ftt {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ftt:hover {
+    opacity: 0.8;
+}
+
+/* Rotación continua de la imagen */
+.ft {
+    animation: rotate 5s  ;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(-500deg); }
+    50% { transform: rotate(500deg); }
+    100% { transform: rotate(-500); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Efecto de desplazamiento horizontal al cargar la página */
+.fotografias {
+    animation: slide 1s ease-in-out;
+}
+
+@keyframes slide {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.inicio {
+          margin-top: 3cm; /* Ajusta el valor según sea necesario */
+        }
+
+        .sobremi {
+          margin-top: 2cm; /* Ajusta el valor según sea necesario */
+        }
+
+        .habilidades {
+          margin-top: 2cm; /* Ajusta el valor según sea necesario */
+        }
+
+.boton-descargar {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid blueviolet;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-descargar:hover {
+  background-color: #3c1852;
+}
+
+
+.habilidades-box {
+  border: 2px solid blueviolet;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 1em;
+  background: none;
+  border-radius: 2em;
+}
+
+.title{
+    font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.habilidades-box h3 {
+  margin-top: 0;
+}
+
+.habilidades-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+    </style>
+
+
+    <header class="encabezado">
+        <nav>
+            <ul>
+                <a href="javascript:void(0)" onclick="scrollToSection('#inicio')">Inicio</a>
+                <a href="javascript:void(0)" onclick="scrollToSection('#sobremi')">SobreMi</a>        
+                <a href="javascript:void(0)" onclick="scrollToSection('#habilidades')">Habilidades</a>   
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div id="inicio" class="inicio">
+        <div class="fotografias">
+            <img class="ft" src="/img/Mifoto.jpeg" alt="">
+        </div>
+
+        <div class="datospersonales">
+            <p class="name">Irving Guadalupe Acosta Varela</p>
+            <p class="carrer">Ingeniero en Tecnologias de la Informacion</p>
+            <br>
+            <div class="datos2">
+                <li>
+                    <a href="https://github.com/IrvingAcosta16">
+                        <img class="ftt"  src="https://cdn.icon-icons.com/icons2/2368/PNG/512/github_logo_icon_143772.png" alt="Logo GitHub" onclick="window.location.href='https://github.com/IrvingAcosta16'">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gitlab.com/Irving16">
+                        <img class="ftt"  src="https://cdn-icons-png.flaticon.com/512/5968/5968900.png" alt="GitLab" onclick="window.location.href='https://gitlab.com/IrvingAcosta16'">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/irving-gpe-acosta-varela-a21378262/">
+                        <img class="ftt"  src="https://cdn.icon-icons.com/icons2/2845/PNG/512/linkedin_logo_icon_181286.png" alt="Linkedin" onclick="window.location.href='https://www.linkedin.com/in/irving-gpe-acosta-varela-a21378262/'">
+                    </a>
+                </li>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="sobremi" class="sobremi">
+        <div class="left">
+          <h2>Sobre mí</h2>
+          <p>Soy un profesional responsable teniendo un gusto peculiar por las tecnoligas, actualmente soy estudiante de Ingeniería en Tecnologías de la Información en la Universidad Politécnica de Sinaloa (UPSIN). Estoy en mi penúltimo cuatrimestre y me graduaré en enero de 2024. Me apasiona bastante el Análisis de Datos y tengo habilidades para resolver problemas en diversos ámbitos, tales como pensamiento analitico, matematico y estadisticos, predisposcion para la investigacion, analisis, organizacion y comunicacion, conocimiento en Big Data, bases de datos y programacion..</p>
+          <p>He aplicado estas técnicas para encontrar soluciones a problemas prácticos y estoy emocionado por aplicar mis conocimientos en proyectos y tareas relacionadas con estas áreas.</p>
+          <br>
+          <center>
+            <a href="/img/Irving gpe. acosta varela.pdf" download class="boton-descargar">
+                Descargar CV
+              </a>
+          </center>
+        </div>
+        <div class="right">
+          <h2>Cursos</h2>
+          <p>Universidad de programación - Python, Java y JavaScript</p>
+          <p>Plataforma: Udemy</p>
+        </div>
+      </div>
+      
+
+      <div id="habilidades" class="habilidades">
+        <center>
+            <h2 class="title">Habilidades</h2>
+        </center>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="habilidades-box">
+                        <h3>Soporte Técnico y Redes</h3>
+                        <p>Experiencia en proyectos relacionados con barcos de carga en un puerto, abordando desde problemas comunes hasta situaciones complejas como rastreo de barcos e implementación de boyas GPS.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="habilidades-box">
+                        <h3>Manejo de lenguajes informáticos</h3>
+                        <ul>
+                            <li>Visual Studio Code (VSC)</li>
+                            <li>C</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="habilidades-box">
+                        <h3>Base de Datos</h3>
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="habilidades-box">
+                        <h3>Desarrollo Web</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.querySelector(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

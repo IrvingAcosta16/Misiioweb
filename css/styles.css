@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 2cm;
+  background-color: #777777;
+  border-bottom: 3px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+
+header nav {
+  padding: 25px;
+  text-align: center;
+}
+
+header nav ul {
+  display: inline;
+  margin-right: 1em;
+}
+
+header nav ul a {
+  letter-spacing: .2em;
+  color: black;
+  text-decoration: none;
+  margin-right: 3cm;
+  font-size: .5cm;
+  font-weight: 600;
+}
+
+.inicio {
+  display: flex;
+  height: 13cm;
+  width: auto;
+  margin-top: 1em;
+  margin-left: 3cm;
+  margin-right: 3cm;
+  border-bottom: 2px solid black;
+}
+
+.datospersonales {
+  height: auto;
+  width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.name {
+  font-size: 65px;
+  margin-bottom: 30px;
+  text-transform: initial;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+}
+
+.carrer {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: initial;
+  font-weight: 300;
+}
+
+.datos2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+
+
+.datos2 li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.datos2 a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.ftt {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.ft {
+  margin-top: 1em;
+  height: 11cm;
+  width: 8cm;
+  border-radius: 1em;
+  padding: 1em;
+  margin-left: 1em;
+  border: 0.1cm solid black; /* Ajusta el tamaño del borde según tus necesidades */
+}
+
+.sobremi {
+  width: auto;
+  height: 12cm;
+  margin-top: 1em;
+}
+
+.habilidades {
+  height: 10cm;
+  width: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+.sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.left{
+  width: 24cm;
+  height: auto;
+}
+
+.right {
+  width: 10cm;
+  height: auto;
+  border: 2px solid blueviolet;
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+
+
+.left h2, .right h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+.left p, .right p {
+  font-size: 1.1rem;
+  line-height: 2;
+  text-align: justify;
+  margin-left: 1em;
+  margin-right: 1em;
+}
